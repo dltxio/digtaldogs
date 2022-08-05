@@ -1,0 +1,7 @@
+{
+  "kovan": {},
+  "rinkeby": {
+    "Dogerc721": "0xE3FE5aD2e835ba4ebC2080205d3664c2dAD597Cf"
+  },
+  "localhost": {}
+}

@@ -1,20 +1,15 @@
-import React from "react";
-import { Navbar } from "./components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import { Buffer } from "buffer";
+import "./App.css";
+import Navigation from "./Navigation";
+import { WalletProvider } from "./components/Providers/Wallet";
 
-window.Buffer = Buffer;
-
-export const App = () => {
+const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <WalletProvider>
+        <Navigation />
+      </WalletProvider>
+    </div>
   );
 };
+
+export default App;
